@@ -7,39 +7,45 @@
     <link rel="stylesheet" href="../static/style.css" />
   </head>
   <body>
-    <form action="/process" method="post">
-      <h2>Formulario de contacto</h2>
-      <div class="form-input">
-        <label for="nombre">Nombre Completo</label>
-        <input type="text" placeholder="Palma Ariel" id="nombre" name="nombre"/>
-      </div>
-      <div class="form-input">
-        <label for="email">Email</label>
-        <input type="email" placeholder="palmaariel@gmail.com" id="email" name="email" />
-      </div>
-      <div class="form-input">
-        <label for="">Tipo de Usuario</label>
-        <select name="" id="option" name="option">
-          <option value="user1">Opción 1</option>
-          <option value="user2">Opción 2</option>
-          <option value="user3"></option>
-        </select>
-      </div>
-      <div class="form-input">
-        <label for="">Referente</label>
-        <input list="referente" name="referente"/>
-        <datalist name="type-of-user" id="referente">
-          <option value="Ariel"></option>
-          <option value="Otro"></option>
-        </datalist>
-      </div>
-      <div class="form-input">
-        <label for="mensaje">Mensaje</label>
-        <textarea rows="5" placeholder="Descripción" id="mensaje" name="mensaje"></textarea>
-      </div>
-      <div class="form-input">
-        <input type="submit" value="Enviar" id="Enviar">
-      </div>
-    </form>
+    <div class="form-input">
+      <form id="form-users" action="/process" method="post">
+        <h2>REGISTRAR USUARIO</h2>
+        <div class="form-input">
+          <label for="nombre">Nombre Completo</label>
+          <input
+            type="text"
+            placeholder="Palma Ariel"
+            id="nombre"
+            name="nombre"
+          />
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="palmaariel@gmail.com"
+            id="email"
+            name="email"
+          />
+        </div>
+        <div class="form-input">
+          <label for="">Constraseña</label>
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+          />
+        </div>
+        <div class="form-input">
+          <input type="submit" value="Enviar" id="Enviar" />
+        </div>
+      </form>
+    </div>
+    
+    <div class="user-list">
+      <ul id="userList"></ul>
+    </div>
+    <script src="../static/main.js"></script>
   </body>
 </html>

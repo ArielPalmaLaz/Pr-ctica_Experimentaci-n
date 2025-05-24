@@ -9,7 +9,8 @@ h2 {
     font-family: sans-serif;
     color: #fff;
 }
-form {
+
+form, ul {
     background-color: transparent;
     padding: 20px 0;
     max-width: 500px;
@@ -20,7 +21,7 @@ form {
 .form-input {
     padding: 10px 20px;
 }
-input, textarea, select {
+input, textarea, select, li, button{
     background-color: transparent;
     width: 100%;
     box-sizing: border-box;
@@ -29,14 +30,20 @@ input, textarea, select {
     border-radius: 4px;
     color: #eee;
 }
+
+ul{
+    list-style-type: none;
+    padding: 12px 12px;
+}
+
+li {
+    margin-top: 15px;
+}
+button {
+    width: 30%;
+}
 select {
     background-color: #222;
-}
-textarea {
-    font-family: sans-serif;
-    min-width: 100%;
-    resize: none;
-    min-height: 102px;
 }
 
 label {
@@ -49,6 +56,8 @@ label {
     width: 40%; 
 } 
 
-#Enviar:hover {
+#Enviar:hover, button:hover {
     background-color: #666;
 }
+
+ 
